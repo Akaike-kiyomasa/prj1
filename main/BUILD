@@ -2,15 +2,15 @@ load("@rules_cc//cc:cc_binary.bzl", "cc_binary")
 load("@rules_cc//cc:cc_library.bzl", "cc_library")
 
 cc_library(
-    name = "header_h",
-    srcs = ["header.cc"],
-    hdrs = ["header.h"],
+    name = "vector_lib",
+    srcs = ["vector.cc"],
+    hdrs = ["vector.h"],
 )
 
 cc_binary(
-    name = "header_cc",
-    srcs = ["header.cc"],
+    name = "vector_bi",
+    srcs = ["vector.cc"],
     deps = [
-        ":header_h",
+        ":vector_lib",
     ],
 )
