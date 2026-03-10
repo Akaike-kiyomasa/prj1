@@ -7,7 +7,7 @@ void Point::offset(double offsetX, double offsetY) {
 }
 
 void Point::print() {
-    std::cout << "()" << x << "," << ")";
+    std::cout << "(" << x << "," << y <<")"<<std::endl;
 }
 
 void Vector::offset(double offsetX, double offsetY) {
@@ -23,5 +23,6 @@ void Vector::print() {
 }
 
 int main(){
-    Point p();
-}
+    Integer i;
+    Integer j(3);
+};
